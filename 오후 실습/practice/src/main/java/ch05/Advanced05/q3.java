@@ -5,10 +5,11 @@ import java.util.Scanner;
 public class q3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        boolean run = true;
-        int speed = 0;
+        int amount =0;
+        boolean process = true;
+        int total = 0;
 
-        while (run) {
+        while (process) {
             System.out.println("------------------------------------");
             System.out.println("1. 예금 | 2. 출금 | 3. 잔고 | 4. 종료");
             System.out.println("------------------------------------");
@@ -17,15 +18,22 @@ public class q3 {
             String strNum = scanner.nextLine();
 
             if (strNum.equals("1")){
-                speed++;
-                System.out.println("현재 속도 : "+speed);
+                amount = scanner.nextInt();
+                scanner.nextLine();
+                total+=amount;
+                System.out.println("예금액 > "+total);
             } else if (strNum.equals("2")) {
-                speed--;
-                System.out.println("현재 속도 : "+speed);
+                amount = scanner.nextInt();
+                scanner.nextLine();
+                total-=amount;
+                System.out.println("예금액 > "+total);
             } else if (strNum.equals("3")) {
-
+                System.out.println("잔고 > " + total);
             } else if (strNum.equals("4")) {
-                run = false;
+                process = false;
+            }
+            else {
+                System.out.println("test");
             }
         }System.out.println("프로그램 종료");
     }
