@@ -42,7 +42,7 @@ public class CalendarExample {
         int hour = now.get(Calendar.HOUR);
         int minute = now.get(Calendar.MINUTE);
         int second = now.get(Calendar.SECOND);
-        
+
         System.out.print(year + "년 ");
         System.out.print(month + "월 ");
         System.out.println(day + "일 ");
