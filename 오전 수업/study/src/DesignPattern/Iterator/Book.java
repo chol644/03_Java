@@ -1,4 +1,4 @@
-package Iterator;
+package DesignPattern.Iterator;
 
 public class Book {
     private String name;

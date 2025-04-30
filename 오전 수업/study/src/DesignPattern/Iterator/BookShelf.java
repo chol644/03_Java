@@ -1,4 +1,4 @@
-package Iterator;
+package DesignPattern.Iterator;
 
 import java.util.Iterator;
 
@@ -21,11 +21,5 @@ public class BookShelf implements Iterable<Book>{
     @Override
     public Iterator<Book> iterator() {
         return new BookShelfIterator(this);
-
-        // 확장 for문을 사용하는 방법
-        for(Book book: bookShelf) {
-            System.out.println(book.getName());
-        }
-        System.out.println();
     }
 }
