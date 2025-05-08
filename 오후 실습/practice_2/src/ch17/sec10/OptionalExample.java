@@ -17,7 +17,7 @@ public class OptionalExample {
         } else {
             System.out.println("방법1_평균: 0.0");
         }
-        
+
         // 방법 2
         double avg = list.stream()
                 .mapToInt(Integer :: intValue)
